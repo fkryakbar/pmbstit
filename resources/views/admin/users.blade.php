@@ -43,6 +43,7 @@
                                 <th>Nama</th>
                                 <th>Email</th>
                                 <th>Role</th>
+                                <th>Waktu Dibuat</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -53,6 +54,7 @@
                                     <td>{{ $user->name }}</td>
                                     <td>{{ $user->email }}</td>
                                     <td>{{ $user->role }}</td>
+                                    <td>{{ $user->created_at }}</td>
                                     <td>
                                         <a href="/admin/users/{{ $user->id }}"
                                             class="btn btn-sm bg-green-500 hover:bg-green-700 border-none">Edit</a>

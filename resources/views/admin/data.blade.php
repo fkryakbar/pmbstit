@@ -59,6 +59,7 @@
                                 <th>Nama Lengkap</th>
                                 <th>No Pendaftaran</th>
                                 <th>Program Studi</th>
+                                <th>Waktu Pendaftaran</th>
                                 <th>Status Pendaftaran</th>
                                 <th>Aksi</th>
                             </tr>
@@ -70,6 +71,7 @@
                                     <td>{{ $form->full_name }}</td>
                                     <td>{{ $form->registration_id }}</td>
                                     <td>{{ $form->study_program }}</td>
+                                    <td>{{ $form->created_at }}</td>
                                     <td>
                                         @if ($form->registration_status == 'seleksi')
                                             <div
