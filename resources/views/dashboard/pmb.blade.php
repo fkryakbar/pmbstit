@@ -55,16 +55,17 @@
                 <h2 class="card-title">Penerimaan Mahasiswa Baru
                     @if ($settings->show_registration_result == 1)
                         @if ($data->registration_status == 'seleksi')
-                            <div class="badge bg-yellow-400 border-none p-3 uppercase">{{ $data->registration_status }}
+                            <div class="badge bg-yellow-400 border-none p-3 uppercase text-white">
+                                {{ $data->registration_status }}
                             </div>
                         @endif
                         @if ($data->registration_status == 'lulus')
-                            <div class="badge bg-green-400 border-none p-3 uppercase">{{ $data->registration_status }}
+                            <div class="badge bg-green-400 border-none p-3 uppercase text-white">
+                                {{ $data->registration_status }}
                             </div>
                         @endif
                         @if ($data->registration_status == 'tidak lulus')
-                            <div
-                                class="text-white text-center rounded-xl bg-red-400 border-none p-3 uppercase text-sm ">
+                            <div class="text-white text-center rounded-xl bg-red-400 border-none p-3 uppercase text-sm">
                                 {{ $data->registration_status }}
                             </div>
                         @endif
@@ -87,10 +88,11 @@
                 <div class="flex justify-between">
                     @if ($settings->allow_to_edit == 1)
                         <button x-show="open" x-transition type="button" x-on:click="disabled= !disabled"
-                            class="btn btn-sm bg-blue-400 border-none w-44 hover:bg-blue-600">Edit Formulir</button>
+                            class="btn btn-sm bg-blue-400 border-none w-44 hover:bg-blue-600 text-white">Edit
+                            Formulir</button>
                     @endif
                     <a x-show="open" x-transitio href="/pendaftaran/cetak/{{ $data->registration_id }}"
-                        class="btn btn-sm bg-green-500 hover:bg-green-700 border-none flex gap-2">
+                        class="btn btn-sm bg-green-500 hover:bg-green-700 border-none flex gap-2 text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -224,15 +226,15 @@
                         <input type="text" placeholder="Masukkan disini" class="input input-bordered w-full"
                             name="phone_number" value="{{ $data->phone_number }}" x-bind:disabled="disabled" />
                     </div>
-                    <button class="btn mt-3 bg-green-500 border-0 hover:bg-green-700 w-full lg:w-[200px]"
+                    <button class="btn mt-3 bg-green-500 border-0 hover:bg-green-700 w-full lg:w-[200px] text-white"
                         :class="disabled ? 'hidden' : ''">SIMPAN
                         FORMULIR</button>
                 </form>
                 <div class="card-actions justify-end">
                     <button x-on:click="open = !open" :class="open ? 'hidden' : ''"
-                        class="btn bg-green-500 border-none hover:bg-green-600">Buka</button>
+                        class="btn bg-green-500 border-none hover:bg-green-600 text-white">Buka</button>
                     <button x-on:click="open = !open" :class="open == false ? 'hidden' : ''"
-                        class="btn bg-green-500 border-none hover:bg-green-600">Tutup</button>
+                        class="btn bg-green-500 border-none hover:bg-green-600 text-white">Tutup</button>
                 </div>
             </div>
         </div>

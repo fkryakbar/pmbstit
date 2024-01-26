@@ -14,8 +14,8 @@
 <body x-cloak x-data="{ sidebar_open: false }">
     @include('partials.landing_sidemenu')
     @include('partials.landing_navbar')
-    <section
-        class="bg-[url('/assets/static/image/kampus.jpg')] h-[550px] lg:h-[450px] bg-center bg-no-repeat bg-cover bg-fixed relative">
+    <section style="background-image: url('{{ asset('assets/static/image/kampus.jpg') }}')"
+        class="h-[550px] lg:h-[450px] bg-center bg-no-repeat bg-cover bg-fixed relative">
         <div class="bg-green-600 h-[550px] lg:h-[450px] w-full opacity-70 absolute">
         </div>
         <div class="absolute w-full">
@@ -26,16 +26,16 @@
                 </div>
                 <div class="flex justify-center flex-col lg:block">
                     <a href="/daftar"
-                        class="btn w-60 mt-4 m-2 bg-green-500 border-0 hover:bg-green-700 shadow-xl">Daftar
+                        class="btn w-60 mt-4 m-2 bg-green-500 border-0 hover:bg-green-700 shadow-xl text-white">Daftar
                         Sekarang</a>
                     <a href="#brosur"
-                        class="btn w-60 mt-4 m-2 bg-green-500 border-0 hover:bg-green-700 shadow-xl">Brosur
+                        class="btn w-60 mt-4 m-2 bg-green-500 border-0 hover:bg-green-700 shadow-xl text-white">Brosur
                         Pendaftaran</a>
                 </div>
             </div>
         </div>
     </section>
-    <section id="alur" class="container mr-auto ml-auto mt-10 pr-3 pl-3">
+    <section id="alur" class="mx-auto lg:w-[70%] w-full mt-10 px-3">
         <div class="border-l-8 p-2 border-green-500">
             <h1 class="text-2xl lg:text-3xl font-bold text-green-500">ALUR PENDAFTARAN ONLINE</h1>
         </div>
@@ -140,22 +140,20 @@
 
 
     </section>
-    <section id="brosur" class="bg-green-50 pt-6 pb-6 mt-6">
-        <div class="container mr-auto ml-auto pr-3 pl-3">
-            <div class="border-l-8 p-2 border-green-500">
-                <h1 class="text-2xl lg:text-3xl font-bold text-green-500">BROSUR PENDAFTARAN</h1>
+    <section id="brosur" class="mx-auto lg:w-[70%] w-full mt-10 px-3">
+        <div class="border-l-8 p-2 border-green-500">
+            <h1 class="text-2xl lg:text-3xl font-bold text-green-500">BROSUR PENDAFTARAN</h1>
+        </div>
+        <div class="lg:flex lg:justify-between  mt-10">
+            <div class="lg:w-[600px] hidden lg:block ">
+                <img src="{{ asset('assets/static/image/Resume folder-rafiki.svg') }}" alt="">
             </div>
-            <div class="lg:flex lg:justify-between  mt-10">
-                <div class="lg:w-[600px] hidden lg:block ">
-                    <img src="{{ asset('assets/static/image/Resume folder-rafiki.svg') }}" alt="">
-                </div>
-                <div class="lg:w-[700px]  shadow-xl lg:shadow-none ">
-                    <img src="{{ asset($settings->brochure) }}" alt="">
-                </div>
+            <div class="lg:w-[700px]  shadow-xl lg:shadow-none ">
+                <img src="{{ asset($settings->brochure) }}" alt="">
             </div>
         </div>
     </section>
-    <section id="narahubung" class="container mx-auto mt-6 mb-6 px-3">
+    <section id="narahubung" class="mx-auto lg:w-[70%] w-full mt-10 px-3">
         <div class="border-l-8 p-2 border-green-500">
             <h1 class="text-2xl lg:text-3xl font-bold text-green-500">NARAHUBUNG</h1>
         </div>
@@ -177,7 +175,7 @@
             </div>
         </div>
     </section>
-    <section id="narahubung" class="container mx-auto mt-6 mb-6 px-3">
+    <section id="lokasi" class="mx-auto lg:w-[70%] w-full mt-10 px-3">
         <div class="border-l-8 p-2 border-green-500">
             <h1 class="text-2xl lg:text-3xl font-bold text-green-500">LOKASI</h1>
         </div>

@@ -8,21 +8,26 @@
             </svg>
         </label>
 
-        <a href="/" class="btn btn-ghost normal-case text-xl"><img width="150px"
+        <a href="/" class="btn btn-ghost normal-case text-xl"><img width="40px"
                 src="{{ asset('assets/static/image/logo.png') }}"></a>
     </div>
     <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
-            <li><a class="btn bg-green-700 border-0 hover:bg-green-800" href="/daftar">Daftar Sekarang</a></li>
-            <li><a class="btn bg-green-700 border-0 hover:bg-green-800" href="/#alur">Alur Pendaftaran Online</a>
+            <li><a class="font-bold text-white items-center justify-center h-fit" href="/daftar">Daftar
+                    Sekarang</a>
             </li>
-            <li><a class="btn bg-green-700 border-0 hover:bg-green-800" href="/#brosur">Brosur</a>
+            <li><a class="font-bold text-white items-center" href="/#alur">Alur
+                    Pendaftaran
+                    Online</a>
             </li>
-            <li><a class="btn bg-green-700 border-0 hover:bg-green-800" href="/#narahubung">Narahubung</a></li>
+            <li><a class="font-bold text-white items-center" href="/#brosur">Brosur</a>
+            </li>
+            <li><a class="font-bold ext-white items-center" href="/#narahubung">Narahubung</a>
+            </li>
 
         </ul>
     </div>
     <div class="navbar-end">
-        <a href="/masuk" class="btn bg-green-700 border-0 hover:bg-green-800">Masuk</a>
+        <a href="/masuk" class="btn bg-green-700 border-0 hover:bg-green-800 text-white">Masuk</a>
     </div>
 </div>

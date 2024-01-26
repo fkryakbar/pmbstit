@@ -30,7 +30,7 @@
     <table style="border: none">
         <tr style="border: none">
             <th style="border: none">
-                <img width="80px" src="https://stitastbr.ac.id/wp-content/uploads/2023/01/logo-polos.png" alt="">
+                <img width="80px" src="https://stitastbr.ac.id/assets/main-logo.png" alt="">
             </th>
             <th style="border: none">
                 <h1>Formulir Pendaftaran Mahasiswa Baru STIT Assuniyyah Tambarangan</h1>

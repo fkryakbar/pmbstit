@@ -26,14 +26,12 @@
                     <hr class="my-3">
                     @if (session()->has('message'))
                         <div class="alert alert-success mb-3">
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6"
-                                    fill="none" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span>{{ session('message') }}</span>
-                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6"
+                                fill="none" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>{{ session('message') }}</span>
                         </div>
                     @endif
                     <table class="table table-compact w-full" id="myTable">
@@ -57,9 +55,9 @@
                                     <td>{{ $user->created_at }}</td>
                                     <td>
                                         <a href="/admin/users/{{ $user->id }}"
-                                            class="btn btn-sm bg-green-500 hover:bg-green-700 border-none">Edit</a>
+                                            class="btn btn-sm bg-green-500 hover:bg-green-700 border-none text-white">Edit</a>
                                         <button onclick="hapus_akun({{ $user->id }})"
-                                            class="btn btn-sm bg-red-500 hover:bg-red-700 border-none">Hapus</button>
+                                            class="btn btn-sm bg-red-500 hover:bg-red-700 border-none text-white">Hapus</button>
                                     </td>
                                 </tr>
                             @endforeach

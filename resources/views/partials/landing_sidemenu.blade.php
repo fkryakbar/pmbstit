@@ -3,7 +3,7 @@
     @click.outside="sidebar_open = false">
     <div class="text-gray-100 text-xl">
         <div class="p-2.5 mt-1 flex justify-between">
-            <a href="/" class="btn btn-ghost normal-case text-xl"><img width="150px"
+            <a href="/" class="btn btn-ghost normal-case text-xl"><img width="40px"
                     src="{{ asset('assets/static/image/logo.png') }}"></a>
             <svg x-on:click="sidebar_open=!sidebar_open" xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">

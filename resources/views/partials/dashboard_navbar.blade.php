@@ -8,11 +8,11 @@
             </svg>
         </label>
 
-        <a href="/" class="btn btn-ghost normal-case text-xl"><img width="150px"
+        <a href="/" class="btn btn-ghost normal-case text-xl"><img width="40px"
                 src="{{ asset('assets/static/image/logo.png') }}"></a>
     </div>
 
     <div class="navbar-end">
-        <a href="/logout" class="btn bg-green-700 border-0 hover:bg-green-800">Logout</a>
+        <a href="/logout" class="btn bg-green-700 border-0 hover:bg-green-800 text-white">Logout</a>
     </div>
 </div>
