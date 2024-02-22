@@ -27,7 +27,7 @@ class PendaftaranController extends Controller
     {
         $request->validate([
             'study_program' => ['required'],
-            'full_name' => ['required', 'max:30'],
+            'full_name' => ['required', 'max:50'],
             'place_of_birth' => ['required', 'max:30'],
             'date_of_birth' => ['required', 'max:30'],
             'nisn' => ['required', 'numeric'],
@@ -67,7 +67,7 @@ class PendaftaranController extends Controller
     {
         $request->validate([
             'study_program' => ['required'],
-            'full_name' => ['required', 'max:30'],
+            'full_name' => ['required', 'max:50'],
             'place_of_birth' => ['required', 'max:30'],
             'date_of_birth' => ['required', 'max:30'],
             'nisn' => ['required', 'numeric'],
